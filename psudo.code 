@@ -1,0 +1,25 @@
+--PAGES--
+Total: 5pages 
+[login, signup, members, cocktail, mixing]
+
+--MAIN PAGE--
+Include navbar of all pages 
+
+3 collums should talk about cocktail, mixing, and being a members
+
+--STYLE.CSS--
+Going to need 5 css pages 
+
+--Handlebars--
+main should connect all pages and talk about cocktails, mixing, and members 
+
+Multiple handlebars for different pages, body of objects buttons connecting to seperate pages 
+
+--Index handlebars--
+includes all objects and whatever
+
+--COCKTAIL PAGE--
+
+
+
+--MIXING PAGE--
