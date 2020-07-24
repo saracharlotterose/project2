@@ -29,6 +29,9 @@ $(document).ready(() => {
       password: password
     })
       .then(() => {
+        alert("You must be 21 or older to continue.");
+      })
+      .then(() => {
         window.location.replace("/members");
         // If there's an error, handle it by throwing up a bootstrap alert
       })
