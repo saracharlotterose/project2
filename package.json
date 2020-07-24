@@ -16,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/saracharlotterose/project2/issues"
   },
-  "homepage": "https://github.com/saracharlotterose/project2#readme"
+  "homepage": "https://github.com/saracharlotterose/project2#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.1.0",
+    "passport": "^0.4.1",
+    "sequelize": "^6.3.3"
+  }
 }
