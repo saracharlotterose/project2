@@ -1,28 +1,39 @@
 {
-  "name": "project2",
+  "name": "1-Passport-Example",
   "version": "1.0.0",
   "description": "",
-  "main": "project.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run lint",
+    "start": "node server.js",
+    "lint": "eslint --quiet .",
+    "fix": "eslint --fix .",
+    "watch": "nodemon server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/saracharlotterose/project2.git"
-  },
+
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/saracharlotterose/project2/issues"
-  },
-  "homepage": "https://github.com/saracharlotterose/project2#readme",
+  
   "dependencies": {
-    "express": "^4.17.1",
+    "bcryptjs": "2.4.3",
+    "express": "^4.17.0",
     "express-handlebars": "^5.1.0",
-    "mysql": "^2.18.1",
-    "mysql2": "^2.1.0",
-    "passport": "^0.4.1",
-    "sequelize": "^6.3.3"
+    "express-session": "^1.16.1",
+    "handlebars": "^4.7.6",
+    "mysql2": "^1.6.5",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "sequelize": "^5.8.6"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^4.0.0",
+    "cross-env": "^5.2.0",
+    "eslint": "^4.19.1",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.2",
+    "mocha": "^5.2.0",
+    "prettier": "^1.13.7"
   }
 }

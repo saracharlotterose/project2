@@ -50,4 +50,7 @@ module.exports = function(app) {
       });
     }
   });
+  app.get("/cocktails", (req, res) => {
+    res.render("cocktails", {});
+  });
 };
