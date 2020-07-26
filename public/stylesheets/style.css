@@ -1,4 +1,26 @@
-form.signup,
-form.login {
+form.signup, form.login {
   margin-top: 50px;
+}
+
+body {
+  /* The image used */
+  background-image: url("https://itadakimasuanime.files.wordpress.com/2018/12/Cocktails-The-Night-is-Short-Walk-on-Girl.png");
+  /* Full height */
+  height: auto;
+  width: auto;
+  /* Center and scale the image nicely */
+  background-position: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(9, 97, 93, 0.747);
+
+}
+h1{
+  font-family: 'flare','sans-serif';
+  font-style: italic;
+  font-weight: 800;
+  font-stretch: semi-expanded;
+}
+h2{
+  font-stretch: wider;
 }
