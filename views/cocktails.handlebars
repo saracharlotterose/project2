@@ -1,0 +1,16 @@
+  
+<h1>Cocktails</h1>
+{{#each cocktails}}
+<h2>{{ name }}</h2>
+<img src="{{ imageUrl }}" alt="{{ name }}">
+<h3>Recipe</h3>
+<p>{{ recipe }}</p>
+<h3>Ingredients</h3>
+<ul>
+  {{#each Ingredients}}
+  <li>{{ name }}</li>
+  {{/each}}
+</ul>
+{{else}}
+<p>No matching cocktails found.</p>
+{{/each}}
