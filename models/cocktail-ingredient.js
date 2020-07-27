@@ -1,4 +1,4 @@
-module.exports = (sequelize, DataTypes) => {
-    const CocktailIngredient = sequelize.define("CocktailIngredient");
-    return CocktailIngredient;
-  };
+module.exports = sequelize => {
+  const CocktailIngredient = sequelize.define("CocktailIngredient");
+  return CocktailIngredient;
+};

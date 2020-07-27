@@ -4,7 +4,7 @@ db.sequelize
   .sync()
   .then(populateDb)
   .then(() => process.exit(0))
-  .catch((error) => {
+  .catch(error => {
     console.log(error);
     process.exit(1);
   });
@@ -21,7 +21,7 @@ async function populateDb() {
     { name: "lemon juice", category: "sour" },
     { name: "tobasco sauce", category: "other" },
     { name: "celery salt", category: "other" },
-    { name: "lemon slice", category: "other" },
+    { name: "lemon slice", category: "other" }
   ]);
 
   const cocktails = await db.Cocktail.bulkCreate([
@@ -30,7 +30,7 @@ async function populateDb() {
       recipe:
         "Pour the tequila and orange juice into glass over ice. Add the grenadine, which will sink to the bottom. Do not stir. Garnish and serve.",
       imageUrl:
-        "https://www.acouplecooks.com/wp-content/uploads/2020/04/Tequila-Sunrise-003s.jpg",
+        "https://www.acouplecooks.com/wp-content/uploads/2020/04/Tequila-Sunrise-003s.jpg"
     },
     {
       name: "Martini",
@@ -40,14 +40,14 @@ async function populateDb() {
       4 Garnish: with a lemon twist, or add olives to make a dirty martini. 
       `,
       imageUrl:
-        "https://makemeacocktail.com/images/cocktails/7376/400_267_martini.jpg",
+        "https://makemeacocktail.com/images/cocktails/7376/400_267_martini.jpg"
     },
     {
       name: "Bloody Maria",
       recipe: `Shake all ingredients (except lemon slice) with cracked ice and strain into an old-fashioned glass over ice cubes.
       Add the slice of lemon and serve.`,
       imageUrl:
-        "https://www.thecocktaildb.com/images/media/drink/yz0j6z1504389461.jpg",
+        "https://www.thecocktaildb.com/images/media/drink/yz0j6z1504389461.jpg"
     }
   ]);
 
