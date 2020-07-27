@@ -40,7 +40,7 @@ async function populateDb() {
       4 Garnish: with a lemon twist, or add olives to make a dirty martini. 
       `,
       imageUrl:
-        "https://www.thespruceeats.com/thmb/OevcAqV-nURBs51XZpzg5gVp5rE=/3870x2580/filters:fill(auto,1)/vodka-martini-recipe-760983-Hero-5bd771cd4cedfd0026121758.jpg",
+        "https://makemeacocktail.com/images/cocktails/7376/400_267_martini.jpg",
     },
     {
       name: "Bloody Maria",

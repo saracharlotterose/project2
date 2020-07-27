@@ -3,16 +3,16 @@ module.exports = (sequelize, DataTypes) => {
     name: {
       type: DataTypes.STRING,
       allowNull: false,
-      unique: true,
+      unique: true
     },
     category: {
-      type: DataTypes.ENUM("alcohol", "sour", "sweetener", "other"),
-    },
+      type: DataTypes.ENUM("alcohol", "sour", "sweetener", "other")
+    }
   });
 
   Ingredient.associate = (models) => {
     Ingredient.belongsToMany(models.Cocktail, {
-      through: "CocktailIngredient",
+      through: "CocktailIngredient"
     });
   };
   return Ingredient;
