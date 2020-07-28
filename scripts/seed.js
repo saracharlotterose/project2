@@ -1,8 +1,6 @@
 const db = require("../models");
 
-db.sequelize
-  .sync()
-  .then(populateDb)
+populateDb()
   .then(() => process.exit(0))
   .catch(error => {
     console.log(error);
@@ -10,6 +8,10 @@ db.sequelize
   });
 
 async function populateDb() {
+  await db.CocktailIngredient.drop();
+  await db.Cocktail.drop();
+  await db.Ingredient.drop();
+  await db.sequelize.sync();
   const ingredients = await db.Ingredient.bulkCreate([
     { name: "tequila", category: "alcohol" },
     { name: "orange juice", category: "sweetener" },
