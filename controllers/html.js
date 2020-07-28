@@ -65,7 +65,7 @@ module.exports = function(app) {
       include: [db.Ingredient]
     }).then(dbDrink => {
       // res.json(dbDrink);
-      res.render("cocktails-view-page", { dbDrink });
+      res.render("cocktails-view-page", dbDrink.toJSON());
     });
   });
 };
