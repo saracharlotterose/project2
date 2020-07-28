@@ -30,9 +30,9 @@ module.exports = (sequelize, DataTypes) => {
   Cocktail.findAllContainingEveryIngredient = async function(ingredients) {
     const sqlString = `
       SELECT c.id, c.name, c.recipe, c.imageUrl
-        FROM cocktails c
-        JOIN cocktailingredients ci ON ci.CocktailId = c.id
-        JOIN ingredients i ON i.id = ci.IngredientId
+        FROM Cocktails c
+        JOIN CocktailIngredients ci ON ci.CocktailId = c.id
+        JOIN Ingredients i ON i.id = ci.IngredientId
       WHERE i.name IN (:ingredients)
       GROUP BY c.id
       HAVING COUNT(DISTINCT i.name) = :count`;
