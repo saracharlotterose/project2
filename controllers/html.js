@@ -53,25 +53,9 @@ module.exports = function(app) {
 
     cocktailsPromise
       .then(cocktails => { 
-        const drinks = [{
-          name: "Tequila Surprise",
-          imageUrl: "https://www.acouplecooks.com/wp-content/uploads/2020/03/Margarita-025.jpg",
-          ingredients: ["Lipsmackingly sweet-and-sour", 
-            "the Cosmopolitan cocktail of vodka", 
-            "cranberry",
-            "orange liqueur", 
-            "citrus"],
-          recipe: [ "Measure/Jigger Egg cup.",
-            "Cocktail shaker Thermos flask.",
-            "Muddler Small rolling pin/End of a wooden spoon.",
-            "Juicer Squeeze by hand.",
-            "Mixing spoon Long teaspoon/Fork handle.",
-            "Strainer Tea strainer."]
-
-
-        }];
-        console.log("looook here for cocktails", cocktails);
-        res.render("cocktails", { cocktails: drinks });
+        
+        
+        res.render("cocktails", { cocktails });
       })
       .catch(error => {
         console.log(error);
