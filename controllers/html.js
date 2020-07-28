@@ -25,7 +25,7 @@ module.exports = function(app) {
           } else if (ingredient.category === "sour") {
             sours.push({ name, value });
           } else {
-            others.push({ name, value });
+            sours.push({ name, value });
           }
         });
         // render mis with each of the arrays
