@@ -25,9 +25,14 @@ require("./controllers/html.js")(app);
 cocktailcontroller(app);
 htmlcontroller(app);
 
-db.sequelize.sync();
-// Starting our Express app
-// =============================================================
-app.listen(PORT, () => {
-  console.log(`App listening on PORT ${PORT}`);
-});
+db.sequelize
+  .sync()
+  .then(() => {
+    app.listen(PORT, () => {
+      console.log(`App listening on PORT ${PORT}`);
+    });
+  })
+  .catch(() => {
+    console.log("unnable to connect to database");
+    process.exit(1);
+  });
